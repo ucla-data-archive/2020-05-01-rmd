@@ -12,6 +12,7 @@ knitr::opts_chunk$set(fig.path='figure/')
 
 ## R Markdown Challenges
 
+## Breakout Room 1 
 
 > ## Challenge 1
 >
@@ -55,18 +56,21 @@ ggplot(gapminder, aes()) +
 plot(faithful)
 ```
 
+> ## Challenge 5
+>
+>Try out a bit of in-line R code.
 
-> ## Challenge 5 - A larger example 
+> ## Challenge 6 - A larger example 
 > For this challenge we'll use the `index.Rmd` file in the folder you downloaded.
 > Open `index.Rmd` and read through the top of the file. On line 50, add different countries in that code chunk. Knit and review the out put. Notice the `index.html` file was created in your file folder. 
 
-> ## Challenge 6 - Sharing your work
+> ## Challenge 7 - Sharing your work
 > Think about how you can share your work from Challenge 5? You could send the Rmd to a colleague and they could run it. But wouldn't it be cool if you could drag the folder to a website and it would be published? You can! We'll use the Netlify drag and drop <https://app.netlify.com/drop> service to make a website. You need to drag the folder containing your `index.html` to the drag and drop site. Unfortunately, you can't do this inside R Studio. We need to find your folder in Windows File Explorer or Mac Finder. Once found, drag and drop that over. 
 > Let's walk through it now. 
 > Once you've done this for your folder, paste the link Netlify gives you into the etherpad! You've published your Rmd! You could create an account with Netlify and create a better url. 
 
 
->## Challenge 4
+>## Challenge 8
 >`rticles` package (J. Allaire, Xie, R Foundation, et al. 2020) is designed to simplify the creation of documents that conform to submission standards.
 > Install the `rticles` & `TinyTex` packages. Both packages are utility packages, so it's not necessary to use library() to load them. Installing `tinytext` might take a bit. 
 > Run the below. It will produce a lot of output. After it completes, look below the output for further instructions. 
