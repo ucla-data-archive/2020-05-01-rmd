@@ -1,0 +1,81 @@
+---
+title: "Challenges"
+author: "Your Name"
+date: "4/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.path='figure/')
+```
+
+## R Markdown Challenges
+
+
+> ## Challenge 1
+>
+> 1. Create a new R Markdown document. Delete all of the R code chunks
+> 2. Make a header (H2) using markdown with your name, hint, `##`
+> 3. On the next line, make a bullet point and add your department
+> 4. Add another bullet point and provide a link to your department or workplace
+> 5. After the bullets, write a bit about your research area or what you might like to do in R. 
+>
+> Convert the document to a webpage.
+
+> ## Challenge 2
+>
+> To the document you created in Challenge 1, add a code chunk, by selecting <kbd>Insert</kbd> and <kbd>R</kbd>. 
+> * Load the ggplot2 package
+> * Read the gapminder data
+> * Create a plot
+> * Change eval=FALSE to eval=TRUE - this tells knit to either run or not run code. 
+> * Knit the document
+
+```{r challenge-2, eval=FALSE}
+library(______)
+library(______)
+ggplot(gapminder, aes()) +
+  geom_____()
+```
+
+> ## Challenge 3
+>
+> 1. Now create a new R Markdown document, but this time select "Presentation" and "HTML ioslides" option
+> 2. Review how the slides are structured. `##` creates a new slide
+> 3. Add some of your text from challenge 1 & two to slides. 
+> 4. Add an image to a slide. 
+> 5. Knit & share your screen with your breakout partners.
+>
+
+> ## Challenge 4
+> Use chunk options to control the size of a figure and to hide the code.
+
+```{r challenge-4}
+plot(faithful)
+```
+
+
+> ## Challenge 5 - A larger example 
+> For this challenge we'll use the `index.Rmd` file in the folder you downloaded.
+> Open `index.Rmd` and read through the top of the file. On line 50, add different countries in that code chunk. Knit and review the out put. Notice the `index.html` file was created in your file folder. 
+
+> ## Challenge 6 - Sharing your work
+> Think about how you can share your work from Challenge 5? You could send the Rmd to a colleague and they could run it. But wouldn't it be cool if you could drag the folder to a website and it would be published? You can! We'll use the Netlify drag and drop <https://app.netlify.com/drop> service to make a website. You need to drag the folder containing your `index.html` to the drag and drop site. Unfortunately, you can't do this inside R Studio. We need to find your folder in Windows File Explorer or Mac Finder. Once found, drag and drop that over. 
+> Let's walk through it now. 
+> Once you've done this for your folder, paste the link Netlify gives you into the etherpad! You've published your Rmd! You could create an account with Netlify and create a better url. 
+
+
+>## Challenge 4
+>`rticles` package (J. Allaire, Xie, R Foundation, et al. 2020) is designed to simplify the creation of documents that conform to submission standards.
+> Install the `rticles` & `TinyTex` packages. Both packages are utility packages, so it's not necessary to use library() to load them. Installing `tinytext` might take a bit. 
+> Run the below. It will produce a lot of output. After it completes, look below the output for further instructions. 
+
+```{r rticles, eval=FALSE}
+install.packages('rticles')
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
+
+> Now create a new R Markdown documents by selecting <kbd>File</kbd> <kbd>New file</kbd> <kbd>R Markdown...</kbd> and <kbd>From Template</kbd> find Plos Journal Article. Open the new document and examine what is in the template. Add yourself as an author. Change some of the text and <kbd>Knit</kbd>. It should produce a PDF ready for submission. 
+
