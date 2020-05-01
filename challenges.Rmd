@@ -21,16 +21,18 @@ knitr::opts_chunk$set(fig.path='figure/')
 > 3. On the next line, make a bullet point and add your department
 > 4. Add another bullet point and provide a link to your department or workplace
 > 5. After the bullets, write a bit about your research area or what you might like to do in R. 
+> 6. Add an image using `![](link-or-path-to-image)`
 >
 > Convert the document to a webpage.
 
 > ## Challenge 2
 >
-> To the document you created in Challenge 1, add a code chunk, by selecting <kbd>Insert</kbd> and <kbd>R</kbd>. 
+> To the document you created in Challenge 1, add a code chunk, by selecting <kbd>Insert</kbd> and <kbd>R</kbd>. You can copy the below code chunk and then fill in the blanks. 
 > * Load the ggplot2 package
 > * Read the gapminder data
 > * Create a plot
 > * Change eval=FALSE to eval=TRUE - this tells knit to either run or not run code. 
+> * See if you can figure out how to do this via the gear control near the play button 
 > * Knit the document
 
 ```{r challenge-2, eval=FALSE}
@@ -49,6 +51,8 @@ ggplot(gapminder, aes()) +
 > 5. Knit & share your screen with your breakout partners.
 >
 
+## Breakout 2
+
 > ## Challenge 4
 > Use chunk options to control the size of a figure and to hide the code.
 
@@ -62,12 +66,11 @@ plot(faithful)
 
 > ## Challenge 6 - A larger example 
 > For this challenge we'll use the `index.Rmd` file in the folder you downloaded.
-> Open `index.Rmd` and read through the top of the file. On line 50, add different countries in that code chunk. Knit and review the out put. Notice the `index.html` file was created in your file folder. 
+> Open `index.Rmd` and read through the file. Change the header information to your name. Change the date. Add some markdown or alter the existing text. On line 50, add different countries in that code chunk. Knit and review the output. Notice the `index.html` file was created in your file folder. 
 
 > ## Challenge 7 - Sharing your work
-> Think about how you can share your work from Challenge 5? You could send the Rmd to a colleague and they could run it. But wouldn't it be cool if you could drag the folder to a website and it would be published? You can! We'll use the Netlify drag and drop <https://app.netlify.com/drop> service to make a website. You need to drag the folder containing your `index.html` to the drag and drop site. Unfortunately, you can't do this inside R Studio. We need to find your folder in Windows File Explorer or Mac Finder. Once found, drag and drop that over. 
-> Let's walk through it now. 
-> Once you've done this for your folder, paste the link Netlify gives you into the etherpad! You've published your Rmd! You could create an account with Netlify and create a better url. 
+> Think about how you can share your work from Challenge 6? You could send the Rmd to a colleague or students and they could run it. But wouldn't it be cool if you could drag the folder to a website and it would be published? You can! We'll use the Netlify drag and drop <https://app.netlify.com/drop> service to make a website. You need to drag the whole folder containing your `index.html` output to the drag and drop Netlify site. Unfortunately, you can't do this inside R Studio. We need to find your folder in Windows File Explorer or Mac Finder. Once found, drag and drop that over. 
+> Once you've done this for your folder, paste the link Netlify gives you into the etherpad and have your breakroom partners access it! You've published your Rmd! You could create an account with Netlify and create a better url. There area also more involved ways to produce whole websites in Rmd. Check out [bookdown](https://bookdown.org/) or [blogdown](https://bookdown.org/yihui/blogdown/) for more information. 
 
 
 >## Challenge 8
